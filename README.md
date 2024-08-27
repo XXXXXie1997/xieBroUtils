@@ -1,2 +1,5 @@
-# xieBroUtils
-utils for front end coder
+# xxxxxie 自用工具库
+
+没什么好描述的，一切为了**早点下班**
+
+人在公司身不由己，随缘更新
