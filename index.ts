@@ -1,5 +1,20 @@
-import { local, session } from "./utils/storageUtils";
-import { date } from "./utils/dateUtils";
-import { array } from "./utils/arrayUtils";
+import { format } from "./src/dateUtils";
+import { diff } from "./src/arrayUtils";
+import { getLocal, setLocal, getSession, setSession } from "./src/storageUtils";
 
-export default { local, session, date, array };
+const date = {
+  format,
+};
+
+const array = {
+  diff,
+};
+const local = {
+  get: getLocal,
+  set: setLocal,
+};
+const session = {
+  get: getSession,
+  set: setSession,
+};
+export { date, array, local, session };

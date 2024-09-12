@@ -1,4 +1,4 @@
-const formatDate = (date: Date, format: string = "YYYY-MM-DD HH:mm:ss") => {
+export function format(date: Date, format: string = "YYYY-MM-DD HH:mm:ss") {
   if (!date) {
     return console.warn("[storage-utils]: date.format方法未提供时间");
   }
@@ -16,8 +16,4 @@ const formatDate = (date: Date, format: string = "YYYY-MM-DD HH:mm:ss") => {
   };
 
   return format.replace(/YYYY|MM|DD|HH|mm|ss/g, (matched) => map[matched]);
-};
-
-export const date = {
-  format: formatDate,
-};
+}
